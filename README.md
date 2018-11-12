@@ -13,3 +13,7 @@
 
 ## scale the serivce in 10 containers 
 ``` docker service update --replicas 10 mywebsite ```
+
+## check the service is working fine in all nodes 
+
+``` docker service ps mywebsite ```
