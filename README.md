@@ -8,6 +8,9 @@
 ## create image out of this Dockerfile --> make sure that it's in all nodes
 ``` docker build -t swarm-image . ```
 
+## intialise the swarm 
+``` docker swarm init ```
+
 ## create the Docker-swarm Service mywebsite
 ``` docker service create --name mywebsite --publish 80:80 swarm-image ```
 
